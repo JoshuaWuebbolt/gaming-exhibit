@@ -322,6 +322,42 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
           </section>
 
+          <section className="section">
+            <div className="left">
+              <h2 className="title">Rez</h2>
+              <p className="text">
+              Rez is a rhythm based shooter for the PS2. Players move on a rail system and enemies and items will spawn in. The player must shoot these enemies and items to make it to the end of each level. The twist is that shooting must be done to the beat of the music playing in the level. To shoot on the beat, keeping a sense of rhythm is important. The Trance Vibrator is a peripheral that assists with keeping this rhythm as well as immersion. When the player successfully shoots the vibrator will vibrate, helping to establish a rhythm as well as giving feedback that the action was successful. It will also vibrate when the shot lands on an enemy. Importantly the shot will always land to the beat of the music playing. This feedback helps maintain rhythm as well as gives feedback to the player that their action was successful. Other times the Trance Vibrator vibrates at the end of each zone when the player is about to move on to another area. The vibrations signal to the player that they are moving on. Rez’s use of the Trance Vibrator improves the game experience by making use of the peripheral and adding additional feedback, rhythm and immersion to the game.
+              </p>
+            </div>
+            <div className="right">
+                  <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', width: '100%' }}>
+                    <iframe
+                      src="https://www.youtube.com/embed/97_-9KXauR0"
+                      title="Rez Trance Vibrator demonstration"
+                      frameBorder="0"
+                      loading="lazy"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen={true}
+                      suppressHydrationWarning
+                      style={{
+                        width: '100%',
+                        maxWidth: 640,
+                        aspectRatio: '16/9',
+                        borderRadius: 8,
+                        boxShadow: '0 8px 24px rgba(2,6,23,0.6)',
+                        border: '1px solid rgba(255,255,255,0.03)',
+                        backgroundColor: 'black',
+                      }}
+                    />
+                    <p style={{ fontSize: 13, marginTop: 8 }}>
+                      <a href="https://www.youtube.com/watch?v=97_-9KXauR0" target="_blank" rel="noopener noreferrer" style={{ color: '#1CAAD9' }}>
+                        [13] View on YouTube
+                      </a>
+                    </p>
+                  </div>
+            </div>
+          </section>
+
             <section className="section alt">
             <div className="left">
               <h2 className="title">Sources Cited</h2>
@@ -364,6 +400,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </li>
               <li style={{ marginBottom: 8, textIndent: '-1.2em', paddingLeft: '1.2em' }}>
                 Sonic Fandom. (2024). <a href="https://sonic.fandom.com/f/p/4400000000000220017" target="_blank" rel="noopener noreferrer">DreamCast VMU (image)</a>. Sonic Fandom.
+              </li>
+              <li style={{ marginBottom: 8, textIndent: '-1.2em', paddingLeft: '1.2em' }}>
+                10min Gameplay (2016). <a href="https://sonic.fandom.com/f/p/4400000000000220017" target="_blank" rel="noopener noreferrer">Rez ... (PS2) Gameplay (video)</a>. YouTube
               </li>
               </ol>
             </div>
