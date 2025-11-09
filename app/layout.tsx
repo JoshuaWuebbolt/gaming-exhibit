@@ -322,70 +322,49 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
           </section>
 
-          <section className="section alt">
+            <section className="section alt">
             <div className="left">
               <h2 className="title">Sources Cited</h2>
-              <ol className="text" style={{ marginTop: 8 }}>
-                <li>
-                  <a href="https://atari.fandom.com/wiki/Driving_Controller" target="_blank" rel="noopener noreferrer">
-                    Driving Controller — Fandom
-                  </a>
-                </li>
-                <li>
-                  <a href="https://sketchfab.com/hunterjamesjensen/collections/power-glove-76398d8f211b4518be983a12958649ed" target="_blank" rel="noopener noreferrer">
-                    Power Glove — hunterjamesjensen
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.nintendo.co.jp/clv/manuals/en/pdf/CLV-P-NABJE.pdf" target="_blank" rel="noopener noreferrer">
-                    Final Fantasy NES manual
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.nintendo.co.jp/clv/manuals/en/pdf/CLV-P-NAANE.pdf" target="_blank" rel="noopener noreferrer">
-                    Legend of Zelda NES manual
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.digitpress.com/library/manuals/nes/Double%20Dragon.pdf" target="_blank" rel="noopener noreferrer">
-                    Double Dragon NES manual
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.thegameisafootarcade.com/wp-content/uploads/2017/02/Cowboy-Kid-Game-Manual.pdf" target="_blank" rel="noopener noreferrer">
-                    Kid Cowboy manual
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.amazon.ca/Nintendo-Nes-Controller-Renewed/dp/B07P9SXPGN" target="_blank" rel="noopener noreferrer">
-                    Standard NES controller (image) — Amazon
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.computinghistory.org.uk/det/37392/PAX-Power-Glove-for-Famicom/" target="_blank" rel="noopener noreferrer">
-                    PAX Power Glove for Famicom — Computing History
-                  </a>
-                </li>
-                <li>
-                  <a href=" https://www.retrogamesreview.co.uk/2015/10/super-glove-ball-nes-review.html" target="_blank" rel="noopener noreferrer">
-                    Super Glove Ball NES Review — Retro Games Review
-                  </a>
-                </li>
-                <li>
-                  <a href="https://segabits.com/blog/2011/08/05/the-weekly-five-the-best-vmu-games/" target="_blank" rel="noopener noreferrer">
-                    The Weekly Five: The Best VMU Games — Segabits
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.dreamcast.nu/en/dreamcast-controller-disassembly-cleaning/ " target="_blank" rel="noopener noreferrer">
-                    DreamCast Controller (image) — Dreamcast.nu
-                  </a>
-                </li>
-                 <li>
-                  <a href="https://sonic.fandom.com/f/p/4400000000000220017" target="_blank" rel="noopener noreferrer">
-                    DreamCast VMU (image) — Sonicthomas199
-                  </a>
-                </li>
+              <ol
+              className="text"
+              style={{ marginTop: 8, paddingLeft: '1.4em', counterReset: 'li' }}
+              >
+              <li style={{ marginBottom: 8, textIndent: '-1.2em', paddingLeft: '1.2em' }}>
+                Atari Fandom. (n.d.). <a href="https://atari.fandom.com/wiki/Driving_Controller" target="_blank" rel="noopener noreferrer">Driving Controller.</a>Fandom.
+              </li>
+              <li style={{ marginBottom: 8, textIndent: '-1.2em', paddingLeft: '1.2em' }}>
+                hunterjamesjensen. (2015). <a href="https://sketchfab.com/hunterjamesjensen/collections/power-glove-76398d8f211b4518be983a12958649ed" target="_blank" rel="noopener noreferrer">Power Glove</a> [3D model]. Sketchfab.
+              </li>
+              <li style={{ marginBottom: 8, textIndent: '-1.2em', paddingLeft: '1.2em' }}>
+                Nintendo (1990). <a href="https://www.nintendo.co.jp/clv/manuals/en/pdf/CLV-P-NABJE.pdf" target="_blank" rel="noopener noreferrer">Final Fantasy [NES manual]</a>.
+              </li>
+              <li style={{ marginBottom: 8, textIndent: '-1.2em', paddingLeft: '1.2em' }}>
+                Nintendo (1989). <a href="https://www.nintendo.co.jp/clv/manuals/en/pdf/CLV-P-NAANE.pdf" target="_blank" rel="noopener noreferrer">The Legend of Zelda [NES manual]</a>.
+              </li>
+              <li style={{ marginBottom: 8, textIndent: '-1.2em', paddingLeft: '1.2em' }}>
+                Nintendo (1987). <a href="https://www.digitpress.com/library/manuals/nes/Double%20Dragon.pdf" target="_blank" rel="noopener noreferrer">Double Dragon [NES manual]</a>.
+              </li>
+              <li style={{ marginBottom: 8, textIndent: '-1.2em', paddingLeft: '1.2em' }}>
+                Nintendo (1991). <a href="https://www.thegameisafootarcade.com/wp-content/uploads/2017/02/Cowboy-Kid-Game-Manual.pdf" target="_blank" rel="noopener noreferrer">Cowboy Kid [NES manual]</a>.
+              </li>
+              <li style={{ marginBottom: 8, textIndent: '-1.2em', paddingLeft: '1.2em' }}>
+                Amazon.ca. (n.d.). <a href="https://www.amazon.ca/Nintendo-Nes-Controller-Renewed/dp/B07P9SXPGN" target="_blank" rel="noopener noreferrer">Nintendo NES Controller (Renewed) [Product page]</a>. Amazon.ca.
+              </li>
+              <li style={{ marginBottom: 8, textIndent: '-1.2em', paddingLeft: '1.2em' }}>
+                Centre for Computing History. (n.d.). <a href="https://www.computinghistory.org.uk/det/37392/PAX-Power-Glove-for-Famicom/" target="_blank" rel="noopener noreferrer">PAX Power Glove for Famicom</a>.
+              </li>
+              <li style={{ marginBottom: 8, textIndent: '-1.2em', paddingLeft: '1.2em' }}>
+                 Roberto Rodriguez (2015). <a href="https://www.retrogamesreview.co.uk/2015/10/super-glove-ball-nes-review.html" target="_blank" rel="noopener noreferrer">Super Glove Ball NES review</a>. Retro Games Review.
+              </li>
+              <li style={{ marginBottom: 8, textIndent: '-1.2em', paddingLeft: '1.2em' }}>
+                Barry. (2011). <a href="https://segabits.com/blog/2011/08/05/the-weekly-five-the-best-vmu-games/" target="_blank" rel="noopener noreferrer">The Weekly Five: The Best VMU Games</a>. Segabits.
+              </li>
+              <li style={{ marginBottom: 8, textIndent: '-1.2em', paddingLeft: '1.2em' }}>
+                Retrodrömmar (2019). <a href="https://www.dreamcast.nu/en/dreamcast-controller-disassembly-cleaning/" target="_blank" rel="noopener noreferrer">Dreamcast controller disassembly &amp; cleaning</a>. Dreamcast.nu.
+              </li>
+              <li style={{ marginBottom: 8, textIndent: '-1.2em', paddingLeft: '1.2em' }}>
+                Sonic Fandom. (2024). <a href="https://sonic.fandom.com/f/p/4400000000000220017" target="_blank" rel="noopener noreferrer">DreamCast VMU (image)</a>. Sonic Fandom.
+              </li>
               </ol>
             </div>
 
