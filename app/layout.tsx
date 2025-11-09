@@ -14,6 +14,43 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <h1>Gaming Exhibit</h1>
           </header>
 
+          <section
+            className="intro-section"
+            aria-labelledby="intro-title"
+            style={{
+              display: 'flex',
+              gap: '24px',
+              alignItems: 'center',
+              padding: '32px',
+              margin: '20px 0',
+              background: 'rgba(255,255,255,0.02)',
+              borderRadius: 12,
+              boxShadow: '0 6px 18px rgba(2,6,23,0.6)',
+            }}
+          >
+            <div style={{ flex: '1 1 60%', minWidth: 260 }}>
+              <h2 id="intro-title" style={{ margin: 0, fontSize: 28, color: 'var(--accent)' }}>
+                Introduction
+              </h2>
+              <p style={{ marginTop: 12, color: 'var(--muted)', lineHeight: 1.5 }}>
+                This exhibit has been arrange to dev into the question of what makes a peripheral good. There are many important aspects to a peripheral, the ability, the quality, the immersive value, the feedback, and above all how well games actually use it. In many games a peripheral in necessary to capture the specific actions that are needed, this was the case for Indy 500 and the Atari Racing Controller. For some games the quality of a peripheral is so poor that it cannot do what is sets out to, such as with the Power Glove. Immersion is sometimes the goal of peripheral such as with the Dream Cast Fishing Controller used in Sega Bass Fishing. Some games such as Rez use peripherals like the Trance Vibrator to provide vital feedback that assist the player. This exhibit hopes to share with the viewer what design decisions and aspects result in successful and unsuccessful gaming peripherals.
+              </p>
+              <p style={{ marginTop: 8, color: 'var(--muted)' }}>
+                What is important to understand is that even the standard controller is a peripheral. An additional goal of this exhibit is to have viewers view the standard controllers for consoles through the lens of a peripheral and critically analyze why they are designed the way they are and to question what should a standard controller look like?
+              </p>
+            </div>
+
+            <div style={{ flex: '0 0 320px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+              <Image
+                src="/intro_image.jpg"
+                alt="Intro Image"
+                width={1200}
+                height={800}
+                style={{ width: '100%', height: 'auto', maxHeight: '300px' }}
+              />
+            </div>
+          </section>
+
           <section className="section">
             <div className="left">
               <h2 className="title">Atari Driving Controller</h2>
@@ -99,7 +136,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div className="left">
               <h2 className="title">Power Glove</h2>
               <p className="text">
-                The Power Glove is a motion sensing peripheral for the NES with sensors that could detect finger movements as well as more traditional buttons and a d-pad attached. The Power Glove came with an attachment that you would setup around your tv which would detect the movements of the Power Glove. The Power Glove detects when users flex their fingers with the exception of their pinky by using fiber optic tubes. The central gimmick of the Power Glove is of course its motion sensing. Being able to move your hand and fingers and have them be detected. Only two games were released specifically with the Power Glove in mind: Super Glove Ball and Bad Street Brawler. Both of these games could be played with a standard NES controller as well [8]. Unfortunately reviews for both of these games say that using the standard NES controller is better or at least equal to using the Power Glove [9] [10]. Because of this the Power Glove fails to contribute to the games which use it.
+                The Power Glove is a motion sensing peripheral for the NES with sensors that could detect finger movements as well as more traditional buttons and a d-pad attached. The Power Glove came with an attachment that you would setup around your tv which would detect the movements of the Power Glove. The Power Glove detects when users flex their fingers with the exception of their pinky by using fiber optic tubes. The central gimmick of the Power Glove is of course its motion sensing. Being able to move your hand and fingers and have them be detected. However Power Glove could not reliabily track its movement which led to poor user experience. Only two games were released specifically with the Power Glove in mind: Super Glove Ball and Bad Street Brawler. Both of these games could be played with a standard NES controller as well [8]. Unfortunately reviews for both of these games say that using the standard NES controller is better or at least equal to using the Power Glove [9] [10]. Its poor build quality and games being better with a standard controller cause the Power Glove to fail to contribute to the games which use it.
               </p>
               <Image 
                 src="/powerglove2.jpg" 
@@ -267,8 +304,100 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
           </section>
 
+          <section className="section">
+            <div className="left">
+              <h2 className="title">Trance Vibrator</h2>
+                <Image 
+                src="/trance_vibrator.jpg" 
+                alt="Sega Bass Fishing Front" 
+                width={1200}
+                height={800}
+                style={{ width: '100%', height: 'auto', maxHeight: '300px' }}
+              />
+            </div>
+            <div className="right">
+              <p className="text">
+                Sega Bass Fishing is a game for the DreamCast that uses the DreamCast Fishing Controller and can also use a standard DreamCast Controller. If a player is using the Fishing Controller, they will use the reel to reel in their hook. It directly mimics real life fishing. Using the standard controller you reel in using the left and right shoulder buttons which unfortunately are far more abstract. When the player has a fish on the hook they sometimes will need to move their fishing rod in a certain direction. Using the fishing controller the player will actually move the fishing rod in the direction that they need to, unlike the standard controller which uses the d-pad to simply have the player click the direction they want. Thought players can use both the standard DreamCast Controller and the Fishing Controller the Fishing Controller allows for increased immersion over the standard controller.
+              </p>
+            </div>
+          </section>
+
+          <section className="section alt">
+            <div className="left">
+              <h2 className="title">Sources Cited</h2>
+              <ol className="text" style={{ marginTop: 8 }}>
+                <li>
+                  <a href="https://atari.fandom.com/wiki/Driving_Controller" target="_blank" rel="noopener noreferrer">
+                    Driving Controller — Fandom
+                  </a>
+                </li>
+                <li>
+                  <a href="https://sketchfab.com/hunterjamesjensen/collections/power-glove-76398d8f211b4518be983a12958649ed" target="_blank" rel="noopener noreferrer">
+                    Power Glove — hunterjamesjensen
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.nintendo.co.jp/clv/manuals/en/pdf/CLV-P-NABJE.pdf" target="_blank" rel="noopener noreferrer">
+                    Final Fantasy NES manual
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.nintendo.co.jp/clv/manuals/en/pdf/CLV-P-NAANE.pdf" target="_blank" rel="noopener noreferrer">
+                    Legend of Zelda NES manual
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.digitpress.com/library/manuals/nes/Double%20Dragon.pdf" target="_blank" rel="noopener noreferrer">
+                    Double Dragon NES manual
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.thegameisafootarcade.com/wp-content/uploads/2017/02/Cowboy-Kid-Game-Manual.pdf" target="_blank" rel="noopener noreferrer">
+                    Kid Cowboy manual
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.amazon.ca/Nintendo-Nes-Controller-Renewed/dp/B07P9SXPGN" target="_blank" rel="noopener noreferrer">
+                    Standard NES controller (image) — Amazon
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.computinghistory.org.uk/det/37392/PAX-Power-Glove-for-Famicom/" target="_blank" rel="noopener noreferrer">
+                    PAX Power Glove for Famicom — Computing History
+                  </a>
+                </li>
+                <li>
+                  <a href=" https://www.retrogamesreview.co.uk/2015/10/super-glove-ball-nes-review.html" target="_blank" rel="noopener noreferrer">
+                    Super Glove Ball NES Review — Retro Games Review
+                  </a>
+                </li>
+                <li>
+                  <a href="https://segabits.com/blog/2011/08/05/the-weekly-five-the-best-vmu-games/" target="_blank" rel="noopener noreferrer">
+                    The Weekly Five: The Best VMU Games — Segabits
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.dreamcast.nu/en/dreamcast-controller-disassembly-cleaning/ " target="_blank" rel="noopener noreferrer">
+                    DreamCast Controller (image) — Dreamcast.nu
+                  </a>
+                </li>
+                 <li>
+                  <a href="https://sonic.fandom.com/f/p/4400000000000220017" target="_blank" rel="noopener noreferrer">
+                    DreamCast VMU (image) — Sonicthomas199
+                  </a>
+                </li>
+              </ol>
+            </div>
+
+            <div className="right" aria-hidden="true" style={{ opacity: 0.9 }}>
+              <div style={{ width: 240, textAlign: 'center' }}>
+                <small style={{ color: 'var(--muted)' }}>References correspond to bracketed citations used in the exhibit text.</small>
+              </div>
+            </div>
+          </section>
+
           <footer className="site-footer">
-            <small>© {new Date().getFullYear()} Gaming Exhibit</small>
+            <small>© {new Date().getFullYear()} Joshua Wuebbolt</small>
           </footer>
 
           <style>{`
@@ -288,7 +417,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               margin: 0;
               font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
               color: #e6eef8;
-              background: linear-gradient(180deg, #020617 0%, #071025 100%);
+              background: #f7fdd4ff
             }
             .site {
               max-width: var(--max-width);
